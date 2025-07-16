@@ -1,0 +1,6 @@
+refs/*
+obj/
+bin/
+
+PEAKING.sln
+build.bat
