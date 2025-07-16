@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace PeakZoomMod
 {
-    [BepInPlugin("krwclassic.peaking.zoom", "PEAKING Zoom Mod", "1.0")]
+    [BepInPlugin("krw.mods.peaking", "PEAKING Zoom Mod", "1.0")]
     public class ZoomMod : BaseUnityPlugin
     {
         private static float normalFov;
@@ -12,7 +12,7 @@ namespace PeakZoomMod
 
         private void Awake()
         {
-            Harmony harmony = new Harmony("krwclassic.peaking.zoom");
+            Harmony harmony = new Harmony("krw.mods.peaking");
             harmony.PatchAll();
             Logger.LogInfo("PEAKING Zoom mod loaded!");
 
